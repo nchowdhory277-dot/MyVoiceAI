@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Voice AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>🎙️ My Voice AI</h1>
+
+        <p>Enter your text and generate a natural AI voice</p>
+
+        <textarea
+            id="textInput"
+            placeholder="Type your English text here..."
+        ></textarea>
+
+        <div class="controls">
+
+            <div class="control">
+                <label for="voice">Voice:</label>
+
+                <select id="voice">
+                    <option value="lessac">English - Lessac (Male)</option>
+                    <option value="amy">English - Amy (Female)</option>
+                    <option value="ryan">English - Ryan (Male)</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label>
+                    Speed:
+                    <span id="speedValue">1.0x</span>
+                </label>
+
+                <input
+                    type="range"
+                    id="speed"
+                    min="0.5"
+                    max="2"
+                    value="1"
+                    step="0.1"
+                >
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="playBtn">
+                ▶️ Generate & Play
+            </button>
+
+            <button id="stopBtn">
+                ⏹️ Stop
+            </button>
+
+            <button id="downloadBtn">
+                ⬇️ Download
+            </button>
+
+        </div>
+
+        <div id="status">
+            Ready — Enter your English text
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
